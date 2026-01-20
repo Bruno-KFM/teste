@@ -1,5 +1,5 @@
 let numerosSorteados = [];
-let limite = 3;
+let limite = 10;
 let numeroSecreto = geradorDeNumeroAleatorio();
 console.log(numeroSecreto);
 let tentativas = 1;
@@ -11,7 +11,7 @@ function exibirTextoNaTela(ref, texto) {
 
 function mesagemInicail() {
     exibirTextoNaTela('h1', 'Bem vindo ao jogo do número secreto!!!');
-    exibirTextoNaTela('p', 'escolha um número entre 1 e 10');
+    exibirTextoNaTela('p', `escolha um número entre 1 e ${limite}`);
 }
 
 mesagemInicail();
